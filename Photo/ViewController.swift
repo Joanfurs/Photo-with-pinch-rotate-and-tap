@@ -6,9 +6,16 @@
 //  Copyright (c) 2014 John Doe. All rights reserved.
 //
 
+
 import UIKit
 
 class ViewController: UIViewController {
+
+	override func loadView() {
+	
+		let screen: UIScreen = UIScreen.mainScreen();
+		view = View(frame: screen.bounds);
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -22,4 +29,3 @@ class ViewController: UIViewController {
 
 
 }
-
